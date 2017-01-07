@@ -138,8 +138,8 @@ i.fa {
 }
 
 .header-toolbar-nav .nav > li > a:hover,
-.header-toolbar-nav .nav > li.active > a,
-.header-toolbar-nav .nav > li.active > a:focus {
+.header-toolbar-nav .nav > li.selected > a,
+.header-toolbar-nav .nav > li.selected > a:focus {
     color: #222;
     background-color: #fff;
 }

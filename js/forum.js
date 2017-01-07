@@ -4,6 +4,7 @@
     $(document).ready(function () {
         //noinspection JSValidateTypes
         var $wn               = $(window),
+            selectedClass     = 'selected',
             $headerEl         = $('#header'),
             $headerToolbar    = $('#header-toolbar'),
             $headerNavEl      = $('.header-toolbar-nav'),
@@ -17,20 +18,20 @@
 
         $headerNavLinks.on('click', function () {
             var $t          = $(this),
-                $tp         = $(this).parent('li'),
-                toggleClass = 'active',
+                $tp         = $t.parent('li'),
                 curHref     = $t.attr('href'),
                 $targetEl   = $(curHref);
 
-            if ($tp.hasClass(toggleClass)) {
-                $tp.removeClass(toggleClass);
+            if ($tp.hasClass(selectedClass)) {
+                $tp.removeClass(selectedClass);
+
                 $targetEl.slideUp();
 
                 //noinspection JSValidateTypes
                 $headerToolbar.css('height', ($headerNavEl.outerHeight() - $headerNavTab.outerHeight()));
             } else {
-                $tp.siblings().removeClass(toggleClass);
-                $tp.addClass(toggleClass);
+                $tp.siblings().removeClass(selectedClass);
+                $tp.addClass(selectedClass);
 
                 $targetEl.siblings().slideUp();
                 $targetEl.slideDown();
