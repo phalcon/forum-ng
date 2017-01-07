@@ -1,3 +1,8 @@
+html {
+    font-size: 100%;
+    height: 101%;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -996,4 +1001,11 @@ a.content-list-header-title:focus {
 .content-sidebar-widget-statistics a:hover,
 .content-sidebar-widget-statistics a:focus {
     color: #70b99a;
+}
+
+
+footer {
+    padding: 50px 0;
+    color: #fff;
+    background-color: rgba(35, 56, 66, 0.98);
 }
