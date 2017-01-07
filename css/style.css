@@ -6,6 +6,24 @@ body {
     padding: 0;
 }
 
+#wrap {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+}
+
+button {
+    outline: 0;
+}
+
 p {
     font-size: 14px;
     line-height: 18px;
@@ -15,31 +33,11 @@ p:last-child {
     margin-bottom: 0;
 }
 
-#wrap {
-    margin: 0;
-    padding: 0;
-    width: auto;
-    min-width: 0;
-    max-width: none;
+i.fa {
+    margin-left: 1px;
 }
-
-/* ==========================================================================
-   Links
-   ========================================================================== */
-
-a {
-    direction: ltr;
-    unicode-bidi: embed;
-}
-
-a:hover	{
-    text-decoration: underline;
-}
-
-a, a:link, a:visited, a:hover, a:active {
-    color: #fff;
-    text-decoration: none;
-    outline: 0;
+.fa.fm {
+    margin-right: 10px;
 }
 
 /* ==========================================================================
