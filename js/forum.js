@@ -13,6 +13,8 @@
             $headerNavTabPane = $('.header-toolbar-nav-tab-pane'),
             headerNavTabPaneH = $headerNavTabPane.outerHeight();
 
+        $headerNavEl.sticky();
+
         $headerNavLinks.on('click', function () {
             var $t          = $(this),
                 $tp         = $(this).parent('li'),

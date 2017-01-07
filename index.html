@@ -45,7 +45,7 @@
 
         <link rel="icon" sizes="16x16 32x32" href="favicon.ico?v=3.2">
 
-        <!-- link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css" -->
+        <!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" -->
         <link rel="stylesheet" href="css/bootstrap.css?v=3.3.7">
         <link rel="stylesheet" href="css/font-awesome.css?v=4.7.0">
 
@@ -83,60 +83,58 @@
                     &nbsp;
                 </div>
 
-                <div id="header-toolbar">
-                    <div class="header-toolbar-nav">
-                        <div class="container">
-                            <div class="header-search guest">
-                                <form action="#" method="post" novalidate="novalidate">
-                                    <div class="input-group">
-                                        <input type="text" name="keywords" class="form-control" placeholder="Search...">
-                                        <span class="input-group-btn">
+                <div class="header-toolbar-nav">
+                    <div class="container">
+                        <div class="header-search guest">
+                            <form action="#" method="post" novalidate="novalidate">
+                                <div class="input-group">
+                                    <input type="text" name="keywords" class="form-control" placeholder="Search...">
+                                    <span class="input-group-btn">
                                             <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                                             <a href="#" class="btn btn-default"><i class="fa fa-gear"></i></a>
                                         </span>
-                                    </div>
-                                </form>
-                            </div>
-                            <ul class="header-nav-primary nav guest">
-                                <li>
-                                    <a href="#tab1" data-toggle="tab">
-                                        <i class="fa fm fa-navicon"></i>
-                                       Navigation
-                                    </a>
-                                </li>
-                                <li class="hidden-sm hidden-xs">
-                                    <a href="#" title="Frequently Asked Questions">
-                                        <i class="fa fm fa-question-circle"></i>
-                                        Help
-                                    </a>
-                                </li>
-                            </ul>
+                                </div>
+                            </form>
                         </div>
-                        <div class="header-toolbar-nav-tab">
-                            <div class="container">
-                                <div class="tab-content">
-                                    <div class="header-toolbar-nav-tab-pane tab-pane" id="tab1" style="background-color: #2b542c">
-                                        <ul class="nav">
-                                            <li>
-                                                <a href="#">Discussions</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Activity</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Categories</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Settings</a>
-                                            </li>
-                                            <li class="hidden-md hidden-lg">
-                                                <a href="#">Help</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Logout</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                        <ul class="header-nav-primary nav guest">
+                            <li>
+                                <a href="#tab1" data-toggle="tab">
+                                    <i class="fa fm fa-navicon"></i>
+                                    Navigation
+                                </a>
+                            </li>
+                            <li class="hidden-sm hidden-xs">
+                                <a href="#" title="Frequently Asked Questions">
+                                    <i class="fa fm fa-question-circle"></i>
+                                    Help
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-toolbar-nav-tab">
+                        <div class="container">
+                            <div class="tab-content">
+                                <div class="header-toolbar-nav-tab-pane tab-pane" id="tab1" style="background-color: #2b542c">
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="#">Discussions</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Activity</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Categories</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Settings</a>
+                                        </li>
+                                        <li class="hidden-md hidden-lg">
+                                            <a href="#">Help</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Logout</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -166,6 +164,9 @@
         </div>
 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- script src="js/vendor/jquery.sticky.min.js"></script -->
+        <script src="js/vendor/jquery.sticky.js"></script>
         <script src="js/forum.js?v=3.2"></script>
         <script src="js/plugins.js?v=3.2"></script>
 
