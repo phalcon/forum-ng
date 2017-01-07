@@ -89,8 +89,7 @@ i.fa {
     text-decoration: none;
 }
 
-.header-toolbar {
-    height: 68px;
+#header-toolbar {
     background-color: #fff;
     -webkit-transition: height .25s ease-in-out;
        -moz-transition: height .25s ease-in-out;
