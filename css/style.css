@@ -141,9 +141,9 @@ i.fa {
     color: #fff;
     text-transform: uppercase;
     -webkit-transition: color .25s ease, background-color .25s ease-in-out;
-    -moz-transition: color .25s ease, background-color .25s ease-in-out;
-    -o-transition: color .25s ease, background-color .25s ease-in-out;
-    transition: color .25s ease, background-color .25s ease-in-out;
+       -moz-transition: color .25s ease, background-color .25s ease-in-out;
+         -o-transition: color .25s ease, background-color .25s ease-in-out;
+            transition: color .25s ease, background-color .25s ease-in-out;
 }
 
 .header-toolbar-nav .nav > li > a:focus {
@@ -473,9 +473,68 @@ i.fa {
 
 #content-area {
     padding: 50px 0;
-    background-color: #f0f0f0;
+    background-color: #eeeff1;
 }
 
 .content-body {
+    -webkit-transition: width .25s ease-in-out;
+       -moz-transition: width .25s ease-in-out;
+         -o-transition: width .25s ease-in-out;
+            transition: width .25s ease-in-out;
+}
 
+.content-body.expended {
+    width: 100%;
+}
+
+.content-breadcrumb {
+    margin-bottom: 30px;
+    padding: 1px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.content-breadcrumb:last-child {
+    margin-bottom: 0;
+}
+
+.content-breadcrumb .breadcrumb {
+    float: left;
+    margin: 0;
+    padding: 16px 15px 14px;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.content-breadcrumb.breadcrumb li a {
+    color: #222;
+    -webkit-transition: color .25s ease;
+       -moz-transition: color .25s ease;
+         -o-transition: color .25s ease;
+            transition: color .25s ease;
+}
+
+.content-breadcrumb.breadcrumb li a:hover,
+.content-breadcrumb.breadcrumb li a:focus {
+    color: #70b99a; /*#ff6c2c;*/
+}
+
+.content-breadcrumb .toggle-sidebar {
+    float: right;
+    margin-top: 12px;
+    margin-right: 15px;
+    color: #222;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    line-height: 26px;
+    outline: 0;
+    -webkit-transition: color .25s ease;
+       -moz-transition: color .25s ease;
+         -o-transition: color .25s ease;
+            transition: color .25s ease;
+}
+
+.content-breadcrumb .toggle-sidebar.active {
+    color: #70b99a; /*#ff6c2c;*/
 }
