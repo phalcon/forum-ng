@@ -2,4 +2,11 @@
 
 # Allow crawling of all content
 User-agent: *
-Disallow:
+Disallow: /400
+Disallow: /401
+Disallow: /403
+Disallow: /404
+Disallow: /500
+Disallow: /503
+Allow: /
+Sitemap: https://sergeyklay.github.io/sitemap.xml
