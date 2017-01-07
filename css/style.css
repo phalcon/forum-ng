@@ -474,6 +474,18 @@ i.fa {
     background-color: #eeeff1;
 }
 
+@media screen and (max-width: 767px) {
+    #content-area {
+        padding-top: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #content-area {
+        padding-top: 25px;
+    }
+}
+
 .content-body {
     -webkit-transition: width .25s ease-in-out;
        -moz-transition: width .25s ease-in-out;
