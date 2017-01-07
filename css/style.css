@@ -885,3 +885,115 @@ a.content-list-header-title:focus {
         display: none;
     }
 }
+
+@media screen and (max-width: 991px) {
+    .content-sidebar {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content-sidebar {
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-sidebar {
+        margin-top: 25px;
+    }
+}
+
+.content-sidebar-widget {
+    margin-bottom: 30px;
+}
+
+.content-sidebar-widget:last-child {
+    margin-bottom: 0;
+}
+
+.content-sidebar-widget-signup {
+    background-color: #fff;
+}
+
+.content-sidebar-widget-signup a.btn {
+    padding: 14px 0;
+    border-radius: 0;
+    color: #fff;
+    background-color: #70b99a;
+    text-transform: uppercase;
+    -webkit-transition: background-color .25s ease-in-out;
+       -moz-transition: background-color .25s ease-in-out;
+         -o-transition: background-color .25s ease-in-out;
+            transition: background-color .25s ease-in-out;
+}
+.content-sidebar-widget-signup a.btn:hover,
+.content-sidebar-widget-signup a.btn:focus {
+    background-color: rgba(35, 56, 66, 0.98);
+}
+
+.content-sidebar-widget-ad {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.content-sidebar-widget-ad .ad {
+    display: block;
+}
+
+.content-sidebar-widget-ad .ad-2 {
+    margin: 10px -5px 0;
+}
+
+.content-sidebar-widget-ad .ad-2 .ad {
+    float: left;
+    width: 50%;
+    padding: 0 5px;
+}
+
+.content-sidebar-widget-ad .ad img {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 991px) {
+    .content-sidebar-widget-ad .ad-2 .ad {
+        overflow: hidden;
+    }
+    .content-sidebar-widget-ad .ad-2 .ad img {
+        margin: 0;
+    }
+    .content-sidebar-widget-ad .ad-2 .ad:first-child img {
+        float: right;
+    }
+}
+
+.content-sidebar-widget-statistics {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.content-sidebar-widget-statistics p {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.content-sidebar-widget-statistics .clearfix strong {
+    float: right;
+}
+
+.content-sidebar-widget-statistics a {
+    color: #222 !important;
+    -webkit-transition: color .25s ease;
+       -moz-transition: color .25s ease;
+         -o-transition: color .25s ease;
+            transition: color .25s ease;
+}
+
+.content-sidebar-widget-statistics a:hover,
+.content-sidebar-widget-statistics a:focus {
+    color: #70b99a;
+}
