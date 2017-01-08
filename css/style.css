@@ -1142,3 +1142,55 @@ footer {
     opacity: 0.8;
     filter: alpha(opacity=80);
 }
+
+#copyright {
+    padding: 20px 0 18px;
+    color: #fff;
+    background-color: rgba(35, 56, 66, 0.98);
+}
+#copyright p {
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+#copyright p a {
+    color: #70b99a;
+    display: inline-block;
+    -webkit-transition: opacity .25s ease;
+       -moz-transition: opacity .25s ease;
+         -o-transition: opacity .25s ease;
+            transition: opacity .25s ease;
+}
+#copyright p a:hover,
+#copyright p a:focus {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.back-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity .25s ease-in-out;
+       -moz-transition: opacity .25s ease-in-out;
+         -o-transition: opacity .25s ease-in-out;
+            transition: opacity .25s ease-in-out;
+    z-index: 99;
+}
+.back-top.show {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.back-top button {
+    display: block;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #70b99a;
+    border: none;
+    font-size: 24px;
+    line-height: 28px;
+}
