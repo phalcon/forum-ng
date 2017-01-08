@@ -1145,7 +1145,7 @@ footer {
 
 #copyright {
     padding: 20px 0 18px;
-    color: #fff;
+    color: #828282;
     background-color: rgba(35, 56, 66, 0.98);
 }
 #copyright p {
@@ -1156,7 +1156,8 @@ footer {
     text-align: center;
 }
 #copyright p a {
-    color: #70b99a;
+    color: #828282;
+    font-weight: 600;
     display: inline-block;
     -webkit-transition: opacity .25s ease;
        -moz-transition: opacity .25s ease;
