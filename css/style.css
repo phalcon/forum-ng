@@ -14,16 +14,17 @@
 
 [Contents]
 
-    1.  General
-    2.  Header Area
-    3.  Logo
-    4.  Top Social Area
-    5.  Log In Area
-    6.  Alerts
-    7.  Content Area
-    8.  Footer Area
-    9.  Copyright
-    10. Plugins
+    1.   General
+    2.   Header Area
+    3.   Logo
+    4.   Top Social Area
+    5.   Log In Area
+    6.   Alerts
+    7.   Content Area
+    7.1. Breadcrumbs
+    8.   Footer Area
+    9.   Copyright
+    10.  Plugins
 
 -------------------------------------------------------------------*/
 
@@ -537,18 +538,22 @@ i.fa {
     width: 100%;
 }
 
-.content-breadcrumb {
+/*-------------------------------------------------------------------
+                           7.1. Breadcrumbs
+-------------------------------------------------------------------*/
+
+.breadcrumbs-wrapper {
     margin-bottom: 30px;
     padding: 1px 0;
     background-color: #fff;
     border-bottom: 1px solid #e9e9e9;
 }
 
-.content-breadcrumb:last-child {
+.breadcrumbs-wrapper:last-child {
     margin-bottom: 0;
 }
 
-.content-breadcrumb .breadcrumb {
+.breadcrumbs-wrapper .breadcrumb {
     float: left;
     margin: 0;
     padding: 16px 15px 14px;
@@ -556,7 +561,7 @@ i.fa {
     border-radius: 0;
 }
 
-.content-breadcrumb.breadcrumb li a {
+.breadcrumbs-wrapper .breadcrumb li a {
     color: #222;
     -webkit-transition: color .25s ease;
        -moz-transition: color .25s ease;
@@ -564,12 +569,12 @@ i.fa {
             transition: color .25s ease;
 }
 
-.content-breadcrumb.breadcrumb li a:hover,
-.content-breadcrumb.breadcrumb li a:focus {
+.breadcrumbs-wrapper .breadcrumb li a:hover,
+.breadcrumbs-wrapper .breadcrumb li a:focus {
     color: #70b99a;
 }
 
-.content-breadcrumb .toggle-sidebar {
+.breadcrumbs-wrapper .toggle-sidebar {
     float: right;
     margin-top: 12px;
     margin-right: 15px;
@@ -585,8 +590,24 @@ i.fa {
             transition: color .25s ease;
 }
 
-.content-breadcrumb .toggle-sidebar.active {
+.breadcrumbs-wrapper .toggle-sidebar.active {
     color: #70b99a;
+}
+
+.breadcrumbs-wrapper .content-list-jumpbox-dropup,
+.breadcrumbs-wrapper .content-list-jumpbox-dropdown {
+    margin-top: 8px;
+    margin-right: 20px;
+}
+.breadcrumbs-wrapper .content-list-jumpbox-dropup .dropdown-toggle,
+.breadcrumbs-wrapper .content-list-jumpbox-dropdown .dropdown-toggle {
+    padding: 6px 20px;
+}
+
+@media screen and (max-width: 991px) {
+    .breadcrumbs-wrapper .content-sidebar {
+        display: none;
+    }
 }
 
 .content-list {
