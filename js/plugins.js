@@ -74,7 +74,7 @@
 
         $toggleContentBtn.on('click', function () {
             var $t        = $(this),
-                $toggleEl = $t.parent('.content-list-header').siblings('.content-list-content');
+                $toggleEl = $t.parent('.content-list-header').siblings('.content-list-wrapper');
 
             if ($toggleEl.height() === 0) {
                 $t.removeClass('toggled');
