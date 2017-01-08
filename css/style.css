@@ -556,6 +556,12 @@ i.fa {
     border-bottom: 1px solid #e9e9e9;
 }
 
+@media screen and (max-width: 480px) {
+    .breadcrumbs-wrapper {
+        margin-bottom: 20px;
+    }
+}
+
 .breadcrumbs-wrapper:last-child {
     margin-bottom: 0;
 }
@@ -1110,6 +1116,12 @@ a.content-list-header-title:focus {
 .pagination-bar {
     margin: 0 0 30px;
     padding: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .pagination-bar {
+        margin: 0 0 20px;
+    }
 }
 
 .pagination-wrapper ul {
