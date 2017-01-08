@@ -679,23 +679,17 @@ a.content-list-header-title:focus {
     filter: alpha(opacity=100);
 }
 
-.content-list-wrapper,
-.thread-list-wrapper,
-.categories-list-wrapper {
+.content-list-wrapper {
     overflow: hidden;
 }
 
-.content-list-wrapper ul,
-.thread-list-wrapper ul,
-.categories-list-wrapper ul {
+.content-list-wrapper ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.content-list-wrapper > ul > li,
-.thread-list-wrapper > ul > li,
-.categories-list-wrapper > ul > li {
+.content-list-wrapper > ul > li {
     margin: 10px 0;
     padding-top: 2px;
     padding-bottom: 14px;
@@ -705,9 +699,7 @@ a.content-list-header-title:focus {
     overflow: hidden;
 }
 
-.content-list-wrapper > ul > li:last-child,
-.thread-list-wrapper > ul > li:last-child,
-.categories-list-wrapper > ul > li:last-child {
+.content-list-wrapper > ul > li:last-child {
     margin-bottom: 0;
 }
 
@@ -727,9 +719,7 @@ a.content-list-header-title:focus {
             transition: color .25s ease, background-color .25s ease-in-out;
 }
 
-.content-list-wrapper ul li:hover > .content-list-content-icon,
-.thread-list-wrapper ul li:hover > .content-list-content-icon,
-.categories-list-wrapper ul li:hover > .content-list-content-icon {
+.content-list-wrapper ul li:hover > .content-list-content-icon {
     color: #fff;
     background-color:#70b99a;
 }
@@ -739,9 +729,7 @@ a.content-list-header-title:focus {
     background-color: #70b99a;
 }
 
-.content-list-wrapper ul li.content-list-sub,
-.thread-list-wrapper ul li.content-list-sub,
-.categories-list-wrapper ul li.content-list-sub {
+.content-list-wrapper ul li.content-list-sub {
     padding: 0;
     background-color: transparent;
     border-bottom: 0;
@@ -887,9 +875,7 @@ a.content-list-header-title:focus {
             transition: color .25s ease;
 }
 
-.content-list-wrapper ul li:hover > .content-list-content-rss a,
-.thread-list-wrapper ul li:hover > .content-list-content-rss a,
-.categories-list-wrapper ul li:hover > .content-list-content-rss a {
+.content-list-wrapper ul li:hover > .content-list-content-rss a {
     color: #70b99a;
 }
 
