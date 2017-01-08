@@ -25,6 +25,10 @@
     "use strict";
 
     $(document).ready(function () {
+        // ================================================================================
+        // Scroll to top
+        // ================================================================================
+
         var scrollToTop = {
             $el: $('.scroll-to-top'),
             $btn: $('.scroll-to-top button'),
@@ -38,6 +42,28 @@
 
         scrollToTop.$btn.on('click', function() {
             $("html, body").animate({scrollTop: 0}, 500);
+        });
+
+        // ================================================================================
+        // Toggle sidebar
+        // ================================================================================
+
+        var $toggleSidebarEl  = $('.toggle-sidebar'),
+            $contentBodyEl    = $('.content-body'),
+            $contentSidebarEl = $('.content-sidebar');
+
+        $toggleSidebarEl.on('click', function () {
+            if ($(this).hasClass('active')) {
+                $toggleSidebarEl.removeClass('active');
+                $contentBodyEl.add($contentSidebarEl).removeClass('expended');
+                $contentSidebarEl.delay(300).fadeIn('slow');
+            } else {
+                $toggleSidebarEl.addClass('active');
+
+                $contentSidebarEl.fadeOut('slow', function () {
+                    $contentBodyEl.add($contentSidebarEl).addClass('expended');
+                });
+            }
         });
 
         $(window).on('scroll', function () {
