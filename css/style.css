@@ -651,7 +651,7 @@ a.content-list-header-title:focus {
     margin-right: 10px;
 }
 
-.content-list-header-toggle-btn {
+.content-toggle {
     position: absolute;
     top: 0;
     right: 0;
@@ -669,12 +669,12 @@ a.content-list-header-title:focus {
     cursor: pointer;
 }
 
-.content-list-header-toggle-btn.toggled i.fa:before {
+.content-toggle.toggled i.fa:before {
     content: "\f067";
 }
 
-.content-list:hover .content-list-header-toggle-btn,
-.content-sidebar-widget:hover .content-list-header-toggle-btn {
+.content-list:hover .content-toggle,
+.content-sidebar-widget:hover .content-toggle {
     opacity: 1;
     filter: alpha(opacity=100);
 }

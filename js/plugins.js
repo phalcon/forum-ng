@@ -66,6 +66,26 @@
             }
         });
 
+        // ================================================================================
+        // Toggle content
+        // ================================================================================
+
+        var $toggleContentBtn = $('.content-toggle');
+
+        $toggleContentBtn.on('click', function () {
+            var $t        = $(this),
+                $toggleEl = $t.parent('.content-list-header').siblings('.content-list-content');
+
+            if ($toggleEl.height() === 0) {
+                $t.removeClass('toggled');
+                $toggleEl.animate({ height: $toggleEl.data('old-height') }, 500).removeAttr('data-old-height');
+            } else {
+                $t.addClass('toggled');
+                //noinspection JSValidateTypes
+                $toggleEl.attr('data-old-height', $toggleEl.outerHeight()).animate({ height: '0' }, 500);
+            }
+        });
+
         $(window).on('scroll', function () {
             scrollToTop.show();
         });
