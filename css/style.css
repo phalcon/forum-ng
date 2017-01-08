@@ -852,12 +852,9 @@ a.content-list-header-title:focus {
 }
 
 @media screen and (max-width: 480px) {
+    .categories-list-title,
     .thread-list-title {
-        max-width: 50%;
-    }
-
-    .categories-list-title {
-        max-width: 31%;
+        max-width: 46%;
     }
 }
 
