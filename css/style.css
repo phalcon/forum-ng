@@ -1064,6 +1064,13 @@ a.content-list-header-title:focus {
     color: #70b99a;
 }
 
+@media screen and (max-width: 320px) {
+    .thread-list-stats p,
+    .categories-list-stats p {
+        margin-right: 15px;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .content-sidebar {
         margin-top: 50px;
