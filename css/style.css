@@ -754,28 +754,40 @@ a.content-list-header-title:focus {
     margin: 20px 0 0 15px;
 }
 
-.content-list-sub .content-list-content-title {
+.content-list-sub .thread-list-title,
+.content-list-sub .categories-list-title {
     width: auto;
     margin-top: 25px;
 }
 
-.content-list-content-title {
+.thread-list-title,
+.categories-list-title {
     float: left;
     margin-top: 15px;
     margin-left: 15px;
+}
+
+.thread-list-title {
+    max-width: 350px;
+}
+
+.categories-list-title {
     max-width: 250px;
 }
 
-.col-md-9.content-body.expended .content-list-content-title {
+.col-md-9.content-body.expended .thread-list-title,
+.col-md-9.content-body.expended .categories-list-title {
     max-width: 645px;
 }
 
-.content-list-content-title.no-desc {
+.thread-list-title.no-desc,
+.categories-list-title.no-desc {
     margin-top: 24px;
     margin-bottom: 8px;
 }
 
-.content-list-content-title h2 {
+.thread-list-title h2,
+.categories-list-title h2 {
     margin: 0;
     font-size: 16px;
     line-height: 22px;
@@ -784,12 +796,14 @@ a.content-list-header-title:focus {
     overflow: hidden;
 }
 
-.content-list-content-title.content-icon-2 h2 {
+.thread-list-title.content-icon-2 h2,
+.categories-list-title.content-icon-2 h2 {
     padding-left: 20px;
     background: no-repeat left center;
 }
 
-.content-list-content-title h2 a {
+.thread-list-title h2 a,
+.categories-list-title h2 a {
     color: rgba(35, 56, 66, 0.98);
     -webkit-transition: color .25s ease;
        -moz-transition: color .25s ease;
@@ -797,36 +811,42 @@ a.content-list-header-title:focus {
             transition: color .25s ease;
 }
 
-.content-list-content-title h2 a:hover {
+.thread-list-title h2 a:hover,
+.categories-list-title h2 a:hover {
     color: #70b99a;
 }
 
-.content-list-content-title p {
+.thread-list-title p,
+.categories-list-title p {
     font-size: 14px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
-.content-list-content-title p a {
+.thread-list-title p a,
+.categories-list-title p a {
     color: #222;
     margin-right: 10px;
 }
 
 @media screen and (max-width: 1200px) {
-    .content-list-content-title {
+    .thread-list-title,
+    .categories-list-title {
         max-width: 210px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .content-list-content-title {
+    .thread-list-title,
+    .categories-list-title {
         max-width: 31%;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .content-list-content-title {
+    .thread-list-title,
+    .categories-list-title {
         max-width: 31%;
     }
 }
