@@ -1037,6 +1037,11 @@ a.content-list-header-title:focus {
     line-height: 18px;
 }
 
+.thread-list-stats p:last-child,
+.categories-list-stats p:last-child {
+    margin-right: 15px;
+}
+
 .thread-list-stats p.visible-lg-inline-block {
     margin: 0;
     width: 180px;
