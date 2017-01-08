@@ -251,6 +251,7 @@ i.fa {
             transition: color .25s ease;
 }
 
+.header-toolbar-nav-tab .nav > li.active > a,
 .header-toolbar-nav-tab .nav > li > a:hover,
 .header-toolbar-nav-tab .nav > li > a:focus {
     color: #70b99a;
