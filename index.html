@@ -1,11 +1,16 @@
 <!doctype html>
-<html class="no-js" lang="en-US">
+<!--[if IE 8]> <html lang="en-US" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en-US" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en-US">
+<!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>Discussions - Phalcon Framework</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name=generator content="Phosphorum 3.2.0">
         <meta name="description" content="Phosphorum - Official Phalcon Forum. Get support using Phalcon, the next-generation PHP Framework.">
         <meta name="keyword" content="php, phalcon, phalcon php, php framework, faster php framework, forum, phosphorum">
@@ -59,7 +64,12 @@
         <link rel="stylesheet" href="css/theme.css?v=3.2">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,vietnamese" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
         <div class="wrapper">
@@ -582,10 +592,9 @@
             </div>
         </div>
 
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"><\/script>')</script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <!-- script src="js/vendor/jquery.sticky.min.js"></script -->
-        <script src="js/vendor/jquery.sticky.js"></script>
+        <script src="js/vendor/jquery.sticky.min.js"></script>
         <script src="js/forum.js?v=3.2"></script>
         <script src="js/plugins.js?v=3.2"></script>
 
