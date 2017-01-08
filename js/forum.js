@@ -78,24 +78,5 @@
                 $toggleEl.attr('data-old-height', $toggleEl.outerHeight()).animate({ height: '0' }, 500);
             }
         });
-
-        var backToTop = {
-            $el: $('.back-top'),
-            $btn: $('.back-top button'),
-            show: function () {
-                //noinspection JSValidateTypes
-                return ($(window).scrollTop() > 1) ? backToTop.$el.addClass('show') : backToTop.$el.removeClass('show');
-            }
-        };
-
-        backToTop.show();
-
-        backToTop.$btn.on('click', function() {
-            $("html, body").animate({scrollTop: 0}, 500);
-        });
-
-        $(window).on('scroll', function () {
-            backToTop.show();
-        });
     });
 })(jQuery);

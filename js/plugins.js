@@ -21,4 +21,27 @@
     }
 }());
 
-// Place any jQuery/helper plugins in here.
+(function ($) {
+    "use strict";
+
+    $(document).ready(function () {
+        var scrollToTop = {
+            $el: $('.scroll-to-top'),
+            $btn: $('.scroll-to-top button'),
+            show: function () {
+                //noinspection JSValidateTypes
+                return ($(window).scrollTop() > 1) ? scrollToTop.$el.addClass('show') : scrollToTop.$el.removeClass('show');
+            }
+        };
+
+        scrollToTop.show();
+
+        scrollToTop.$btn.on('click', function() {
+            $("html, body").animate({scrollTop: 0}, 500);
+        });
+
+        $(window).on('scroll', function () {
+            scrollToTop.show();
+        });
+    });
+})(jQuery);

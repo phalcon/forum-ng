@@ -1170,7 +1170,7 @@ footer {
     filter: alpha(opacity=80);
 }
 
-.back-top {
+.scroll-to-top {
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -1182,11 +1182,11 @@ footer {
             transition: opacity .25s ease-in-out;
     z-index: 99;
 }
-.back-top.show {
+.scroll-to-top.show {
     opacity: 1;
     filter: alpha(opacity=100);
 }
-.back-top button {
+.scroll-to-top button {
     display: block;
     padding: 8px 16px;
     color: #fff;
