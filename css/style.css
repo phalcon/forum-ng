@@ -910,6 +910,7 @@ a.content-list-header-title:focus {
 }
 
 .categories-list-meta .recent-post {
+    font-size: 0.9em;
     display: block;
     white-space: nowrap;
     text-overflow: ellipsis;
