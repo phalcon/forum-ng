@@ -115,7 +115,7 @@ i.fa {
 
 .header-promo-content {
     position: absolute;
-    top: 50%;
+    top: 44%;
     left: 0;
     width: 100%;
     color: #fff;
@@ -679,17 +679,23 @@ a.content-list-header-title:focus {
     filter: alpha(opacity=100);
 }
 
-.content-list-wrapper {
+.content-list-wrapper,
+.thread-list-wrapper,
+.categories-list-wrapper {
     overflow: hidden;
 }
 
-.content-list-wrapper ul {
+.content-list-wrapper ul,
+.thread-list-wrapper ul,
+.categories-list-wrapper ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.content-list-wrapper > ul > li {
+.content-list-wrapper > ul > li,
+.thread-list-wrapper > ul > li,
+.categories-list-wrapper > ul > li {
     margin: 10px 0;
     padding-top: 2px;
     padding-bottom: 14px;
@@ -699,7 +705,9 @@ a.content-list-header-title:focus {
     overflow: hidden;
 }
 
-.content-list-wrapper > ul > li:last-child {
+.content-list-wrapper > ul > li:last-child,
+.thread-list-wrapper > ul > li:last-child,
+.categories-list-wrapper > ul > li:last-child {
     margin-bottom: 0;
 }
 
@@ -719,7 +727,9 @@ a.content-list-header-title:focus {
             transition: color .25s ease, background-color .25s ease-in-out;
 }
 
-.content-list-wrapper ul li:hover > .content-list-content-icon {
+.content-list-wrapper ul li:hover > .content-list-content-icon,
+.thread-list-wrapper ul li:hover > .content-list-content-icon,
+.categories-list-wrapper ul li:hover > .content-list-content-icon {
     color: #fff;
     background-color:#70b99a;
 }
@@ -729,7 +739,9 @@ a.content-list-header-title:focus {
     background-color: #70b99a;
 }
 
-.content-list-wrapper ul li.content-list-sub {
+.content-list-wrapper ul li.content-list-sub,
+.thread-list-wrapper ul li.content-list-sub,
+.categories-list-wrapper ul li.content-list-sub {
     padding: 0;
     background-color: transparent;
     border-bottom: 0;
@@ -789,7 +801,7 @@ a.content-list-header-title:focus {
 .thread-list-title h2,
 .categories-list-title h2 {
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -824,28 +836,38 @@ a.content-list-header-title:focus {
     overflow: hidden;
 }
 
+.categories-list-title p {
+    color: #737373;
+}
+
 .thread-list-title p a,
 .categories-list-title p a {
     color: #222;
     margin-right: 10px;
 }
 
+.thread-list-title p a.username {
+    margin-right: 0;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 1200px) {
-    .thread-list-title,
     .categories-list-title {
         max-width: 210px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .thread-list-title,
     .categories-list-title {
         max-width: 31%;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .thread-list-title,
+    .thread-list-title {
+        max-width: 50%;
+    }
+
     .categories-list-title {
         max-width: 31%;
     }
@@ -865,18 +887,20 @@ a.content-list-header-title:focus {
             transition: color .25s ease;
 }
 
-.content-list-wrapper ul li:hover > .content-list-content-rss a {
+.content-list-wrapper ul li:hover > .content-list-content-rss a,
+.thread-list-wrapper ul li:hover > .content-list-content-rss a,
+.categories-list-wrapper ul li:hover > .content-list-content-rss a {
     color: #70b99a;
 }
 
-.content-list-content-meta {
+.categories-list-meta {
     float: right;
     width: 200px;
     margin-top: 20px;
     margin-right: 30px;
 }
 
-.content-list-content-meta a.avatar {
+.categories-list-meta a.avatar {
     display: block;
     float: left;
     width: 30px;
@@ -885,7 +909,7 @@ a.content-list-header-title:focus {
     margin-top: 5px;
 }
 
-.content-list-content-meta .recent-post {
+.categories-list-meta .recent-post {
     display: block;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -895,8 +919,13 @@ a.content-list-header-title:focus {
             transition: color .25s ease;
 }
 
-.content-list-content-meta .recent-post-time {
+.categories-list-meta .recent-post-time {
     display: block;
+}
+
+.thread-list-title p,
+.categories-list-meta .recent-post-time {
+    font-size: 0.9em;
     color: #737373;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -907,17 +936,17 @@ a.content-list-header-title:focus {
             transition: color .25s ease;
 }
 
-.content-list-content-meta .recent-post-time a {
+.categories-list-meta .recent-post-time a {
     color: #222 !important;
     font-weight: 600;
 }
 
-.content-list-content-meta .no-posts {
+.categories-list-meta .no-posts {
     display: block;
     margin-top: 10px;
 }
 
-.content-list-content-meta a {
+.categories-list-meta a {
     color: #222;
     overflow: hidden;
     -webkit-transition: color .25s ease;
@@ -926,38 +955,47 @@ a.content-list-header-title:focus {
             transition: color .25s ease;
 }
 
-.content-list-content-meta a:hover {
+.categories-list-meta a:hover {
     color: #70b99a !important;
 }
 
 @media screen and (max-width: 767px) {
-    .content-list-content-meta {
+    .categories-list-meta {
         width: 20%;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .content-list-content-meta {
+    .categories-list-meta {
         display: none;
     }
 }
 
-.content-list-content-stats {
+.thread-list-stats,
+.categories-list-stats {
     float: right;
     margin-top: 20px;
     font-size: 0;
     text-align: center;
 }
 
-.content-list-content-stats p {
+.thread-list-stats,
+.categories-list-stats {
+    font-size: inherit;
+}
+
+.thread-list-stats p,
+.categories-list-stats p {
     display: inline-block;
     margin: 0 30px 0 0;
-    font-size: 14px;
+    font-size: 0.9em;
     line-height: 18px;
 }
 
-.content-list-content-stats p span {
-    font-size: 13px;
+.thread-list-stats p span,
+.categories-list-stats p span,
+.thread-list-stats p time,
+.categories-list-stats p time {
     display: block;
     font-weight: 600;
 }

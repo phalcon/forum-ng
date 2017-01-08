@@ -193,8 +193,8 @@
                             <div class="tab-content">
                                 <div class="header-toolbar-nav-tab-pane tab-pane" id="tab1">
                                     <ul class="nav" role="tablist">
-                                        <li>
-                                            <a href="#">
+                                        <li class="active">
+                                            <a href="index.html">
                                                 <i class="fa fm fa-comment-o"></i>
                                                 Discussions
                                             </a>
@@ -209,6 +209,18 @@
                                             <a href="categories.html">
                                                 <i class="fa fm fa-list-ul"></i>
                                                 Categories
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fm fa-bomb"></i>
+                                                Hot
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fm fa-file-o"></i>
+                                                Unanswered
                                             </a>
                                         </li>
                                         <li>
@@ -259,50 +271,102 @@
                                         <i class="fa fa-minus"></i>
                                     </span>
                                 </div>
-                                <div class="content-list-wrapper">
+                                <div class="thread-list-wrapper">
                                     <ul>
                                         <li>
                                             <div class="content-list-content-icon">
-                                                <i class="fa fa-chain"></i>
+                                                <i class="fa fa-lock"></i>
                                             </div>
                                             <div class="thread-list-title">
                                                 <h2><a href="#">Phalcon Monthly Funding Campaign</a></h2>
-                                                <p>Category description here</p>
+                                                <p class="thread-created-author">
+                                                    by <a href="#" class="username">dschissler</a>&nbsp;<time>10d ago</time>
+                                                </p>
                                             </div>
-                                            <div class="content-list-content-meta">
-                                                <a href="#" class="recent-post">Phalcon Monthly Funding Campaign</a>
-                                                <span class="recent-post-time">
-                                                    by <a href="#" class="username">dschissler</a>
-                                                    Wed Jan 04, 2017 4:21 pm
-                                                </span>
-                                            </div>
-                                            <div class="content-list-content-stats">
-                                                <p><span>2</span>Replies</p>
-                                                <p class="hidden-xs"><span>123</span>Views</p>
-                                            </div>
-                                            <div class="content-list-content-rss">
-                                                <a href="#"><i class="fa fa-rss"></i></a>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="content-list-content-icon">
-                                                <i class="fa fa-comments-o"></i>
-                                            </div>
-                                            <div class="thread-list-title">
-                                                <h2><a href="#">Beginners</a></h2>
-                                                <p>Category description here</p>
-                                            </div>
-                                            <div class="content-list-content-meta">
-                                                <a href="#" class="recent-post">Phalcon\Image\Adapter\GD bug</a>
-                                                <span class="recent-post-time">
-                                                    by <a href="#" class="username">Già Làng</a>
-                                                    Thu Jan 04, 2017 4:20 pm
-                                                </span>
-                                            </div>
-                                            <div class="content-list-content-stats">
+                                            <div class="thread-list-stats">
                                                 <p><span>4</span>Replies</p>
-                                                <p class="hidden-xs"><span>33</span>Views</p>
+                                                <p class="hidden-xs"><span>103</span>Views</p>
+                                                <p class="hidden-xs"><time>4h ago</time>Last Reply</p>
+                                            </div>
+                                            <div class="content-list-content-rss">
+                                                <a href="#"><i class="fa fa-rss"></i></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="content-list-content-icon">
+                                                <i class="fa fa-lock"></i>
+                                            </div>
+                                            <div class="thread-list-title">
+                                                <h2><a href="#">Phalcon Cookbook !!</a></h2>
+                                                <p class="thread-created-author">
+                                                    by <a href="#" class="username">niden</a>&nbsp;<time>Nov '16</time>
+                                                </p>
+                                            </div>
+                                            <div class="thread-list-stats">
+                                                <p><span>16</span>Replies</p>
+                                                <p class="hidden-xs"><span>724</span>Views</p>
+                                                <p class="hidden-xs"><time>2d ago</time>Last Reply</p>
+                                            </div>
+                                            <div class="content-list-content-rss">
+                                                <a href="#"><i class="fa fa-rss"></i></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="content-list-content-icon">
+                                                <i class="fa fa-lock"></i>
+                                            </div>
+                                            <div class="thread-list-title">
+                                                <h2><a href="#">Introducing Built with Phalcon</a></h2>
+                                                <p class="thread-created-author">
+                                                    by <a href="#" class="username">phalcon</a>&nbsp;<time>Jun '14</time>
+                                                </p>
+                                            </div>
+                                            <div class="thread-list-stats">
+                                                <p><span>13</span>Replies</p>
+                                                <p class="hidden-xs"><span>7.5k</span>Views</p>
+                                                <p class="hidden-xs"><time>Jun '14</time>Last Reply</p>
+                                            </div>
+                                            <div class="content-list-content-rss">
+                                                <a href="#"><i class="fa fa-rss"></i></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="content-list-content-icon">
+                                                <i class="fa fa-lock"></i>
+                                            </div>
+                                            <div class="thread-list-title">
+                                                <h2><a href="#">Community contributed Extensions/Plugins/Adapters/VM</a></h2>
+                                                <p class="thread-created-author">
+                                                    by <a href="#" class="username">phalcon</a>&nbsp;<time>Oct '13</time>
+                                                </p>
+                                            </div>
+                                            <div class="thread-list-stats">
+                                                <p><span>40</span>Replies</p>
+                                                <p class="hidden-xs"><span>7.9k</span>Views</p>
+                                                <p class="hidden-xs"><time>Nov '11</time>Last Reply</p>
+                                            </div>
+                                            <div class="content-list-content-rss">
+                                                <a href="#"><i class="fa fa-rss"></i></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="content-list-content-icon">
+                                                <i class="fa fa-lock"></i>
+                                            </div>
+                                            <div class="thread-list-title">
+                                                <h2><a href="#">Phalcon Stickers</a></h2>
+                                                <p class="thread-created-author">
+                                                    by <a href="#" class="username">niden</a>&nbsp;<time>May '13</time>
+                                                </p>
+                                            </div>
+                                            <div class="thread-list-stats">
+                                                <p><span>45</span>Replies</p>
+                                                <p class="hidden-xs"><span>5.4k</span>Views</p>
+                                                <p class="hidden-xs"><time>Dec '16</time>Last Reply</p>
                                             </div>
                                             <div class="content-list-content-rss">
                                                 <a href="#"><i class="fa fa-rss"></i></a>
@@ -314,19 +378,15 @@
                                                 <i class="fa fa-comments-o"></i>
                                             </div>
                                             <div class="thread-list-title">
-                                                <h2><a href="#">ORM</a></h2>
-                                                <p>Category description here</p>
+                                                <h2><a href="#">Is it a conceptual error on documentation?</a></h2>
+                                                <p class="thread-created-author">
+                                                    by <a href="#" class="username">Fabrício Costa</a>&nbsp;<time>3h ago</time>
+                                                </p>
                                             </div>
-                                            <div class="content-list-content-meta">
-                                                <a href="#" class="recent-post">Record to object</a>
-                                                <span class="recent-post-time">
-                                                    by <a href="#" class="username">guediagael</a>
-                                                    Tue Jan 03, 2017 7:17 am
-                                                </span>
-                                            </div>
-                                            <div class="content-list-content-stats">
+                                            <div class="thread-list-stats">
                                                 <p><span>0</span>Replies</p>
-                                                <p class="hidden-xs"><span>0</span>Views</p>
+                                                <p class="hidden-xs"><span>5</span>Views</p>
+                                                <p class="hidden-xs"><time>&mdash;</time>Last Reply</p>
                                             </div>
                                             <div class="content-list-content-rss">
                                                 <a href="#"><i class="fa fa-rss"></i></a>
@@ -338,19 +398,15 @@
                                                 <i class="fa fa-comments-o"></i>
                                             </div>
                                             <div class="thread-list-title">
-                                                <h2><a href="#">General</a></h2>
-                                                <p>Category description here</p>
+                                                <h2><a href="#">phalcon-devtools dont export triggers</a></h2>
+                                                <p class="thread-created-author">
+                                                    by <a href="#" class="username">duronrulez</a>&nbsp;<time>7h ago</time>
+                                                </p>
                                             </div>
-                                            <div class="content-list-content-meta">
-                                                <a href="#" class="recent-post">Business logic in fetch, save models, business model in forms</a>
-                                                <span class="recent-post-time">
-                                                    by <a href="#" class="username">hajcu</a>
-                                                    Sat Jan 07, 2017 1:17 pm
-                                                </span>
-                                            </div>
-                                            <div class="content-list-content-stats">
-                                                <p><span>1</span>Replies</p>
+                                            <div class="thread-list-stats">
+                                                <p><span>0</span>Replies</p>
                                                 <p class="hidden-xs"><span>9</span>Views</p>
+                                                <p class="hidden-xs"><time>&mdash;</time>Last Reply</p>
                                             </div>
                                             <div class="content-list-content-rss">
                                                 <a href="#"><i class="fa fa-rss"></i></a>
@@ -362,19 +418,15 @@
                                                 <i class="fa fa-comments-o"></i>
                                             </div>
                                             <div class="thread-list-title">
-                                                <h2><a href="#">Mvc</a></h2>
-                                                <p>Category description here</p>
+                                                <h2><a href="#">Job for php7.1-fpm.service failed because a fatal signal</a></h2>
+                                                <p class="thread-created-author">
+                                                    by <a href="#" class="username">duronrulez</a>&nbsp;<time>1d ago</time>
+                                                </p>
                                             </div>
-                                            <div class="content-list-content-meta">
-                                                <a href="#" class="recent-post">find model with join and access to getter method</a>
-                                                <span class="recent-post-time">
-                                                    by <a href="#" class="username">sparmar12</a>
-                                                    Fri Dec 30, 2016 8:53 am
-                                                </span>
-                                            </div>
-                                            <div class="content-list-content-stats">
-                                                <p><span>1234</span>Replies</p>
-                                                <p class="hidden-xs"><span>10265</span>Views</p>
+                                            <div class="thread-list-stats">
+                                                <p><span>1</span>Replies</p>
+                                                <p class="hidden-xs"><span>28</span>Views</p>
+                                                <p class="hidden-xs"><time>1d ago</time>Last Reply</p>
                                             </div>
                                             <div class="content-list-content-rss">
                                                 <a href="#"><i class="fa fa-rss"></i></a>
@@ -386,19 +438,15 @@
                                                 <i class="fa fa-comments-o"></i>
                                             </div>
                                             <div class="thread-list-title">
-                                                <h2><a href="#">Volt</a></h2>
-                                                <p>Category description here</p>
+                                                <h2><a href="#">Business logic in fetch, save models, business model in forms</a></h2>
+                                                <p class="thread-created-author">
+                                                    by <a href="#" class="username">duronrulez</a>&nbsp;<time>2d ago</time>
+                                                </p>
                                             </div>
-                                            <div class="content-list-content-meta">
-                                                <a href="#" class="recent-post">Sequence of a multiple controllers and volt using content</a>
-                                                <span class="recent-post-time">
-                                                    by <a href="#" class="username">Juan R Carrillo</a>
-                                                    Thu Jan 05, 2017 9:03 am
-                                                </span>
-                                            </div>
-                                            <div class="content-list-content-stats">
-                                                <p><span>0</span>Replies</p>
-                                                <p class="hidden-xs"><span>689</span>Views</p>
+                                            <div class="thread-list-stats">
+                                                <p><span>2</span>Replies</p>
+                                                <p class="hidden-xs"><span>28</span>Views</p>
+                                                <p class="hidden-xs"><time>2d ago</time>Last Reply</p>
                                             </div>
                                             <div class="content-list-content-rss">
                                                 <a href="#"><i class="fa fa-rss"></i></a>
@@ -410,19 +458,15 @@
                                                 <i class="fa fa-comments-o"></i>
                                             </div>
                                             <div class="thread-list-title">
-                                                <h2><a href="#">Database</a></h2>
-                                                <p>Category description here</p>
+                                                <h2><a href="#">CLI Application</a></h2>
+                                                <p class="thread-created-author">
+                                                    by <a href="#" class="username">darxed</a>&nbsp;<time>3d ago</time>
+                                                </p>
                                             </div>
-                                            <div class="content-list-content-meta">
-                                                <a href="#" class="recent-post">mongodb with multiple modules</a>
-                                                <span class="recent-post-time">
-                                                    by <a href="#" class="username">Wojciech Ślawski</a>
-                                                    Fri Jan 06, 2017 1:03 pm
-                                                </span>
-                                            </div>
-                                            <div class="content-list-content-stats">
-                                                <p><span>5</span>Replies</p>
-                                                <p class="hidden-xs"><span>12</span>Views</p>
+                                            <div class="thread-list-stats">
+                                                <p><span>2</span>Replies</p>
+                                                <p class="hidden-xs"><span>38</span>Views</p>
+                                                <p class="hidden-xs"><time>2d ago</time>Last Reply</p>
                                             </div>
                                             <div class="content-list-content-rss">
                                                 <a href="#"><i class="fa fa-rss"></i></a>
@@ -434,19 +478,95 @@
                                                 <i class="fa fa-comments-o"></i>
                                             </div>
                                             <div class="thread-list-title">
-                                                <h2><a href="#">Installation</a></h2>
-                                                <p>Category description here</p>
+                                                <h2><a href="#">Problem installing on Centos 6.X</a></h2>
+                                                <p class="thread-created-author">
+                                                    by <a href="#" class="username">darxed</a>&nbsp;<time>2d ago</time>
+                                                </p>
                                             </div>
-                                            <div class="content-list-content-meta">
-                                                <a href="#" class="recent-post">Job for php7.1-fpm.service failed because a fatal signal</a>
-                                                <span class="recent-post-time">
-                                                    by <a href="#" class="username">Mike de Vrind</a>
-                                                    Sat Jan 07, 2017 12:03 pm
-                                                </span>
+                                            <div class="thread-list-stats">
+                                                <p><span>3</span>Replies</p>
+                                                <p class="hidden-xs"><span>19</span>Views</p>
+                                                <p class="hidden-xs"><time>2d ago</time>Last Reply</p>
                                             </div>
-                                            <div class="content-list-content-stats">
-                                                <p><span>22</span>Replies</p>
-                                                <p class="hidden-xs"><span>44</span>Views</p>
+                                            <div class="content-list-content-rss">
+                                                <a href="#"><i class="fa fa-rss"></i></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="content-list-content-icon">
+                                                <i class="fa fa-comments-o"></i>
+                                            </div>
+                                            <div class="thread-list-title">
+                                                <h2><a href="#">mongodb with multiple modules</a></h2>
+                                                <p class="thread-created-author">
+                                                    by <a href="#" class="username">nikita10109</a>&nbsp;<time>3d ago</time>
+                                                </p>
+                                            </div>
+                                            <div class="thread-list-stats">
+                                                <p><span>1</span>Replies</p>
+                                                <p class="hidden-xs"><span>23</span>Views</p>
+                                                <p class="hidden-xs"><time>3d ago</time>Last Reply</p>
+                                            </div>
+                                            <div class="content-list-content-rss">
+                                                <a href="#"><i class="fa fa-rss"></i></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="content-list-content-icon">
+                                                <i class="fa fa-comments-o"></i>
+                                            </div>
+                                            <div class="thread-list-title">
+                                                <h2><a href="#">Concatenate columns using SQLite</a></h2>
+                                                <p class="thread-created-author">
+                                                    by <a href="#" class="username">Michal Sotolar</a>&nbsp;<time>4d ago</time>
+                                                </p>
+                                            </div>
+                                            <div class="thread-list-stats">
+                                                <p><span>3</span>Replies</p>
+                                                <p class="hidden-xs"><span>16</span>Views</p>
+                                                <p class="hidden-xs"><time>3d ago</time>Last Reply</p>
+                                            </div>
+                                            <div class="content-list-content-rss">
+                                                <a href="#"><i class="fa fa-rss"></i></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="content-list-content-icon">
+                                                <i class="fa fa-comments-o"></i>
+                                            </div>
+                                            <div class="thread-list-title">
+                                                <h2><a href="#">Optional Parameter on URL Generate</a></h2>
+                                                <p class="thread-created-author">
+                                                    by <a href="#" class="username">Ahmet Bora</a>&nbsp;<time>4d ago</time>
+                                                </p>
+                                            </div>
+                                            <div class="thread-list-stats">
+                                                <p><span>2</span>Replies</p>
+                                                <p class="hidden-xs"><span>24</span>Views</p>
+                                                <p class="hidden-xs"><time>4d ago</time>Last Reply</p>
+                                            </div>
+                                            <div class="content-list-content-rss">
+                                                <a href="#"><i class="fa fa-rss"></i></a>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="content-list-content-icon">
+                                                <i class="fa fa-comments-o"></i>
+                                            </div>
+                                            <div class="thread-list-title">
+                                                <h2><a href="#">Record to object</a></h2>
+                                                <p class="thread-created-author">
+                                                    by <a href="#" class="username">guediagael</a>&nbsp;<time>4d ago</time>
+                                                </p>
+                                            </div>
+                                            <div class="thread-list-stats">
+                                                <p><span>9</span>Replies</p>
+                                                <p class="hidden-xs"><span>35</span>Views</p>
+                                                <p class="hidden-xs"><time>1d ago</time>Last Reply</p>
                                             </div>
                                             <div class="content-list-content-rss">
                                                 <a href="#"><i class="fa fa-rss"></i></a>
