@@ -86,6 +86,44 @@
             }
         });
 
+        // Sticky Wrapper
+
+        var $headerNavEl      = $('.header-toolbar-nav'),
+            $headerNavTab     = $('.header-toolbar-nav-tab'),
+            $headerNavLinks   = $('.header-toolbar-nav [data-toggle="tab"]'),
+            $headerNavTabPane = $('.header-toolbar-nav-tab-pane'),
+            headerNavTabPaneH = $headerNavTabPane.outerHeight();
+
+        $headerNavEl.sticky();
+
+        $headerNavLinks.on('click', function () {
+            var $tp       = $(this).parent('li'),
+                curHref   = $(this).attr('href'),
+                $targetEl = $(curHref),
+                height;
+
+            if ($tp.hasClass('selected')) {
+                $tp.removeClass('selected');
+
+                $targetEl.slideUp();
+
+                height = $headerNavEl.outerHeight() - $headerNavTab.outerHeight();
+                $('#sticky-wrapper').css('height', height);
+            } else {
+                $tp.siblings().removeClass('selected');
+                $tp.addClass('selected');
+
+                $targetEl.siblings().slideUp();
+                $targetEl.slideDown();
+
+                if (!$('#sticky-wrapper').hasClass('is-sticky')) {
+                    height = $headerNavEl.outerHeight() + headerNavTabPaneH;
+
+                    $('#sticky-wrapper').css('height', height);
+                }
+            }
+        });
+
         $(window).on('scroll', function () {
             scrollToTop.show();
         });
