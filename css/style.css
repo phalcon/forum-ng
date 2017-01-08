@@ -956,15 +956,10 @@ a.content-list-header-title:focus {
     line-height: 18px;
 }
 
-.content-list-content-stats p strong {
+.content-list-content-stats p span {
     font-size: 13px;
     display: block;
-}
-
-@media screen and (max-width: 767px) {
-    .content-list-content-stats p:last-child {
-        display: none;
-    }
+    font-weight: 600;
 }
 
 @media screen and (max-width: 991px) {
