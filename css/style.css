@@ -924,6 +924,10 @@ a.content-list-header-title:focus {
     margin: 20px 4px 0;
 }
 
+.categories-wrapper .content-list-rss {
+    margin-right: 30px;
+}
+
 @media screen and (max-width: 1024px) {
     .content-list-rss {
         margin-right: 25px;
