@@ -377,13 +377,7 @@ i.fa {
 }
 
 .header-nav-primary.nav > li > a {
-    padding: 26px 20px 24px;
-}
-
-@media screen and (max-width: 991px) {
-    .header-nav-primary.nav > li > a {
-        padding: 26px 15px 24px;
-    }
+    padding: 26px 15px 24px;
 }
 
 @media screen and (max-width: 767px) {
