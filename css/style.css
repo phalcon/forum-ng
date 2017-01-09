@@ -90,6 +90,7 @@ i.fa {
 @media screen and (max-width: 360px) {
     .fa.fm {
         margin-right: 2px;
+        width: 16px;
     }
 }
 
@@ -295,7 +296,7 @@ i.fa {
     }
 
     .header-toolbar-nav-tab .nav > li > a {
-        padding: 10px 20px 8px;
+        padding: 10px 20px 8px 16px;
     }
 }
 
