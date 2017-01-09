@@ -137,6 +137,12 @@ i.fa {
     }
 }
 
+@media screen and (max-width: 360px) {
+    .header-promo-content h2 {
+        font-size: 20px;
+    }
+}
+
 .header-flash {
     color: #fff;
     margin-bottom: 0;
