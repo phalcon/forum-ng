@@ -757,8 +757,8 @@ i.fa {
 }
 
 .post {
-    background: no-repeat 100% 0;
-    border-radius: 7px;
+    display: inline-block;
+    background: transparent no-repeat 100% 0;
     position: relative;
 }
 
@@ -766,7 +766,7 @@ i.fa {
     color: #333;
     padding: 0;
     line-height: 1.48em;
-    width: 76%;
+    width: 80%;
     float: left;
     position: relative;
 }
@@ -885,7 +885,7 @@ i.fa {
 .user-card {
     display: inline;
     float: right;
-    width: 22%;
+    width: 18%;
     border: 0 solid #fff;
     border-left: 1px;
     margin: 5px 0 10px 0;
@@ -896,7 +896,6 @@ i.fa {
 .user-card dd,
 .user-card dt {
     line-height: 1.2em;
-    margin-left: 8px;
 }
 
 .user-card dd {
@@ -931,6 +930,55 @@ i.fa {
 .user-card-name {
     margin-bottom: 10px;
 }
+
+.user-card .avatar-container {
+    display: block;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.user-card .avatar-container:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.user-card .avatar {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    right: -25%;
+    margin-right: -25%;
+}
+
+.user-card .avatar img {
+    display: block;
+    height: auto !important;
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.5);
+}
+
+/*********************************************
+.user-card .avatar-container {
+    margin: 0;
+    overflow: inherit;
+}
+
+.user-card .avatar-container:after {
+    clear: none;
+}
+
+.user-card .avatar {
+    margin-right: 5px;
+}
+
+.user-card .avatar img {
+    width: auto !important;
+    height: auto !important;
+    max-height: 32px;
+}
+*********************************************/
 
 /*-------------------------------------------------------------------
                            7.2. Breadcrumbs
