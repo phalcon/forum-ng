@@ -756,13 +756,12 @@ a.content-list-header-title:focus {
     margin-bottom: 0;
 }
 
-.content-list-content-icon {
+.content-list-icon {
     float: left;
     width: 35px;
     margin: 18px 0 0 15px;
     padding: 5px 0;
-    color: #70b99a;
-    border: 1px solid #70b99a;
+    color: rgba(35, 56, 66, 0.98);
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -772,18 +771,17 @@ a.content-list-header-title:focus {
             transition: color .25s ease, background-color .25s ease-in-out;
 }
 
+.thread-solved .content-list-icon {
+    color: #70b99a;
+}
+
 @media screen and (max-width: 320px) {
-    .content-list-content-icon {
+    .content-list-icon {
         display: none!important;
     }
 }
 
-.content-list-wrapper ul li:hover > .content-list-content-icon {
-    color: #fff;
-    background-color:#70b99a;
-}
-
-.content-list-content-holder:hover .content-list-content-icon {
+.content-list-content-holder:hover .content-list-icon {
     color: #fff;
     background-color: #70b99a;
 }
