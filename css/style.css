@@ -582,6 +582,12 @@ i.fa {
     text-align: right;
 }
 
+@media screen and (max-width: 480px) {
+    .action-bar-wrapper {
+        margin-bottom: 20px;
+    }
+}
+
 .action-bar .btn {
     padding: 14px 15px;
     border-radius: 0;
