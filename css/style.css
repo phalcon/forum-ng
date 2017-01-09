@@ -775,6 +775,10 @@ a.content-list-header-title:focus {
     color: #70b99a;
 }
 
+.thread-bounty .content-list-icon {
+    color: #5bc0de;
+}
+
 @media screen and (max-width: 320px) {
     .content-list-icon {
         display: none!important;
