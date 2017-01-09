@@ -58,13 +58,13 @@
         $toggleSidebarEl.on('click', function () {
             if ($(this).hasClass('active')) {
                 $toggleSidebarEl.removeClass('active');
-                $contentBodyEl.add($contentSidebarEl).removeClass('expended');
+                $contentBodyEl.add($contentSidebarEl).removeClass('full-size');
                 $contentSidebarEl.delay(300).fadeIn('slow');
             } else {
                 $toggleSidebarEl.addClass('active');
 
                 $contentSidebarEl.fadeOut('slow', function () {
-                    $contentBodyEl.add($contentSidebarEl).addClass('expended');
+                    $contentBodyEl.add($contentSidebarEl).addClass('full-size');
                 });
             }
         });

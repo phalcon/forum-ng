@@ -565,7 +565,7 @@ i.fa {
             transition: width .25s ease-in-out;
 }
 
-.content-body.expended {
+.content-body.full-size {
     width: 100%;
 }
 
@@ -836,14 +836,14 @@ a.content-list-header-title:focus {
     max-width: 250px;
 }
 
-.col-md-9.content-body.expended .thread-list-title,
-.col-md-9.content-body.expended .categories-list-title {
+.col-md-9.content-body.full-size .thread-list-title,
+.col-md-9.content-body.full-size .categories-list-title {
     max-width: 645px;
 }
 
 @media screen and (max-width: 360px) {
-    .col-md-9.content-body.expended .thread-list-title,
-    .col-md-9.content-body.expended .categories-list-title {
+    .col-md-9.content-body.full-size .thread-list-title,
+    .col-md-9.content-body.full-size .categories-list-title {
         max-width: 62%;
     }
 }
