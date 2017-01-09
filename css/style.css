@@ -589,7 +589,7 @@ i.fa {
 }
 
 .action-bar .btn {
-    padding: 14px 10px;
+    padding: 14px 15px;
     border-radius: 0;
     color: #fff;
     text-transform: uppercase;
@@ -597,6 +597,12 @@ i.fa {
        -moz-transition: background-color .25s ease-in-out;
          -o-transition: background-color .25s ease-in-out;
             transition: background-color .25s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+    .action-bar .btn {
+        padding: 10px 15px;
+    }
 }
 
 .action-bar a.btn-new {
@@ -613,7 +619,7 @@ i.fa {
     float: left;
     display: inline;
     margin-left: 10px;
-    padding: 14px 0 14px 15px;
+    padding: 14px 15px;
     line-height: 1.5;
 }
 
@@ -622,7 +628,7 @@ i.fa {
         float: right;
         margin-left: 0;
         margin-right: 0;
-        padding-right: 10px;
+        padding: 10px 15px;
         background-color: #70b99a;
     }
 }
@@ -736,6 +742,12 @@ i.fa {
     background-color: #fff;
     opacity: 0.7;
     filter: alpha(opacity=70);
+}
+
+@media screen and (max-width: 480px) {
+    .topic-quick-links-menu.nav > li > span:first-child {
+        padding-left: 15px;
+    }
 }
 
 .topic-quick-links-menu.nav > li > span .fa,
