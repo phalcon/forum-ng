@@ -1222,15 +1222,15 @@ a.content-list-header-title:focus {
 
 .content-wrapper > ul > li {
     margin: 10px 0;
-    padding-top: 2px;
-    padding-bottom: 14px;
+    padding-top: 0;
+    padding-bottom: 15px;
     border: 0 solid #e9e9e9;
     border-bottom-width: 1px;
     background-color: #fff;
     overflow: hidden;
 }
 
-.content-wrapper > ul > li:first-child {
+.post-wrapper > ul > li:first-child {
     margin-top: 0;
 }
 
@@ -1259,6 +1259,12 @@ a.content-list-header-title:focus {
 
 .thread-bounty .content-list-icon {
     color: #5bc0de;
+}
+
+@media screen and (max-width: 360px) {
+    .content-list-icon {
+        width: 18px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -1326,7 +1332,7 @@ a.content-list-header-title:focus {
 @media screen and (max-width: 360px) {
     .col-md-9.content-body.full-size .thread-list-title,
     .col-md-9.content-body.full-size .categories-list-title {
-        max-width: 62%;
+        max-width: 46%;
     }
 }
 
