@@ -1249,6 +1249,10 @@ a.content-list-header-title:focus {
     overflow: hidden;
 }
 
+.content-wrapper > ul > li:first-child {
+    margin-top: 0;
+}
+
 .content-wrapper > ul > li:last-child {
     margin-bottom: 0;
 }
