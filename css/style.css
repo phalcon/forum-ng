@@ -616,9 +616,26 @@ i.fa {
     line-height: 1.5;
 }
 
+@media screen and (max-width: 480px) {
+    .topic-tools {
+        float: right;
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 10px;
+        background-color: #70b99a;
+    }
+}
+
 .topic-tools > a {
     color: #222;
     text-transform: capitalize;
+}
+
+@media screen and (max-width: 480px) {
+    .topic-tools > a {
+        color: #fff;
+        text-transform: uppercase;
+    }
 }
 
 .topic-tools .dropdown-menu {
@@ -639,6 +656,13 @@ i.fa {
 .topic-tools .dropdown-menu {
     left: 15px;
     right: auto;
+}
+
+@media screen and (max-width: 480px) {
+    .topic-tools .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
 }
 
 .topic-tools .dropdown-menu .fa.fa-fw {
@@ -686,6 +710,12 @@ i.fa {
     padding: 6px 10px 0 0;
     margin-right: 10px;
     text-transform: capitalize;
+}
+
+@media screen and (max-width: 480px) {
+    .topic-quick-links {
+        float: left;
+    }
 }
 
 .topic-quick-links .nav {
