@@ -697,7 +697,9 @@ i.fa {
     float: left;
 }
 
+.topic-quick-links-menu.nav > li > span,
 .topic-quick-links-menu.nav > li > a {
+    display: block;
     padding: 10px;
     color: #222;
     background-color: #fff;
@@ -705,6 +707,7 @@ i.fa {
     filter: alpha(opacity=70);
 }
 
+.topic-quick-links-menu.nav > li > span .fa,
 .topic-quick-links-menu.nav > li > a .fa {
     color: #828282;
 }
