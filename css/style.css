@@ -641,7 +641,7 @@ i.fa {
     }
 
     .breadcrumb > li + li:before {
-        padding: 0 2px;
+        padding: 0;
     }
 
     .breadcrumb > li:first-child + li:before {
