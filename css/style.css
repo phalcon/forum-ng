@@ -20,6 +20,7 @@
     4.   Top Social Area
     5.   Log In Area
     6.   Alerts
+    6.1. Labels
     7.   Content Area
     7.1. Post
     7.2. Breadcrumbs
@@ -539,6 +540,19 @@ i.fa {
 }
 
 /*-------------------------------------------------------------------
+                           6.1 Labels
+-------------------------------------------------------------------*/
+
+.label-success {
+    background-color: #70b99a;
+}
+
+.label-success[href]:hover,
+.label-success[href]:focus {
+    background-color: #468b6c;
+}
+
+/*-------------------------------------------------------------------
                            7. Content Area
 -------------------------------------------------------------------*/
 
@@ -849,6 +863,11 @@ i.fa {
     color: #70b99a;
 }
 
+.with-user-card .post-body > h3 a + .label {
+    font-size: .48em;
+    font-weight: 300;
+}
+
 .post-body p.author {
     margin-bottom: 0.6em;
     padding: 0 0 15px 0;
@@ -1051,6 +1070,13 @@ i.fa {
         height: auto!important;
         max-height: 48px;
     }
+}
+
+.callout {
+    margin: 1.1rem 0;
+    padding: 1.1rem;
+    border-top: 1px solid #eee;
+    background-color: #0a8ed0;
 }
 
 /*-------------------------------------------------------------------
