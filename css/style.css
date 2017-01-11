@@ -45,8 +45,10 @@ body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1rem;
     font-weight: 300;
-    line-height: 18px;
-    padding: 0;
+    line-height: 1.6;
+    color: #292b2c;
+    letter-spacing: 0;
+    background-color: #f5f8fa;
 }
 
 #wrap {
@@ -70,11 +72,6 @@ button {
 dt {
     font-size: 14px;
     font-weight: 400;
-}
-
-p {
-    font-size: 14px;
-    line-height: 18px;
 }
 
 p:last-child {
@@ -882,9 +879,7 @@ i.fa {
     min-height: 3em;
     overflow: hidden;
     overflow-x: auto;
-    font-size: 14px;
     font-weight: 300;
-    line-height: 20px;
     padding-bottom: 1px;
 }
 
@@ -1884,11 +1879,6 @@ footer {
     .footer-widget:nth-last-child(2) {
         margin-bottom: 50px;
     }
-}
-
-.footer-about p {
-    font-size: 14px;
-    line-height: 22px;
 }
 
 .footer-about a.read-more-btn {
