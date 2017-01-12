@@ -801,7 +801,6 @@ i.fa {
 
 .post-content {
     margin: -2px 0 0;
-    padding: 10px 15px 0;
 }
 
 .post-content .post-buttons .icon-button:before {
@@ -1248,11 +1247,10 @@ a.content-list-header-title:focus {
 }
 
 .content-wrapper > ul > li {
-    margin: 10px 0;
-    padding-top: 0;
-    padding-bottom: 15px;
-    border: 0 solid rgba(0, 0, 0, 0.125);
-    border-bottom-width: 1px;
+    display: block;
+    margin-bottom: -1px;
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
     background-color: #fff;
     overflow: hidden;
 }
@@ -1268,12 +1266,12 @@ a.content-list-header-title:focus {
 .content-list-icon {
     float: left;
     width: 35px;
-    margin: 18px 0 0 15px;
+    margin: 4px 0 0 0;
     padding: 5px 0;
     color: rgba(35, 56, 66, 0.98);
     font-size: 20px;
     line-height: 24px;
-    text-align: center;
+    text-align: left;
     -webkit-transition: color .25s ease, background-color .25s ease-in-out;
        -moz-transition: color .25s ease, background-color .25s ease-in-out;
          -o-transition: color .25s ease, background-color .25s ease-in-out;
@@ -1339,8 +1337,6 @@ a.content-list-header-title:focus {
 .thread-list-title,
 .categories-list-title {
     float: left;
-    margin-top: 15px;
-    margin-left: 15px;
 }
 
 .thread-list-title {
@@ -1450,7 +1446,7 @@ a.content-list-header-title:focus {
 
 .content-list-rss {
     float: right;
-    margin: 20px 4px 0;
+    margin: 0 4px 0;
 }
 
 .categories-wrapper .content-list-rss {
@@ -1495,9 +1491,7 @@ a.content-list-header-title:focus {
 
 .categories-list-meta {
     float: right;
-    width: 200px;
-    margin-top: 20px;
-    margin-right: 30px;
+    width: 220px;
 }
 
 .categories-list-meta a.avatar {
@@ -1575,14 +1569,7 @@ a.content-list-header-title:focus {
 .thread-list-stats,
 .categories-list-stats {
     float: right;
-    margin-top: 20px;
-    font-size: 0;
     text-align: center;
-}
-
-.thread-list-stats,
-.categories-list-stats {
-    font-size: inherit;
 }
 
 .thread-list-stats p,
