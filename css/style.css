@@ -92,6 +92,11 @@ i.fa {
     }
 }
 
+.bordered {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
 /*-------------------------------------------------------------------
                            2. Header area
 -------------------------------------------------------------------*/
@@ -1081,7 +1086,6 @@ i.fa {
     margin-bottom: 30px;
     padding: 1px 0;
     background-color: #fff;
-    border-bottom: 1px solid #e9e9e9;
 }
 
 @media screen and (max-width: 480px) {
@@ -1261,6 +1265,8 @@ a.content-list-header-title:focus {
 
 .content-wrapper > ul > li:last-child {
     margin-bottom: 0;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
 }
 
 .content-list-icon {
