@@ -1358,7 +1358,7 @@ a.content-list-header-title:focus {
 @media screen and (max-width: 360px) {
     .col-md-9.content-body.full-size .thread-list-title,
     .col-md-9.content-body.full-size .categories-list-title {
-        max-width: 46%;
+        max-width: 62%;
     }
 }
 
@@ -1436,7 +1436,7 @@ a.content-list-header-title:focus {
 @media screen and (max-width: 480px) {
     .categories-list-title,
     .thread-list-title {
-        max-width: 46%;
+        max-width: 62%;
     }
 }
 
@@ -1453,24 +1453,24 @@ a.content-list-header-title:focus {
 }
 
 .categories-wrapper .content-list-rss {
-    margin-right: 30px;
+    margin-right: 2.5rem;
 }
 
 @media screen and (max-width: 1024px) {
     .content-list-rss {
-        margin-right: 25px;
+        margin-right: 1.5rem!important;
     }
 }
 
 @media screen and (max-width: 767px) {
     .content-list-rss {
-        margin-right: 25px;
+        margin-right: 1.5rem!important;
     }
 }
 
 @media screen and (max-width: 480px) {
     .content-list-rss {
-        margin-right: 25px;
+        margin-right: 1.5rem!important;
     }
 }
 
@@ -1619,6 +1619,19 @@ a.content-list-header-title:focus {
     .thread-list-stats p,
     .categories-list-stats p {
         margin-right: 15px;
+    }
+
+    .categories-list-stats > p {
+        margin-right: 0;
+    }
+
+    .thread-list-stats .thread-list-replies,
+    .thread-list-stats .thread-list-replies {
+        margin-right: 0;
+    }
+
+    .thread-list-stats p:last-child {
+        background-color: #0f1d24;
     }
 }
 
