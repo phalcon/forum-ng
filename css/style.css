@@ -1100,7 +1100,7 @@ i.fa {
 
 .breadcrumbs-wrapper .breadcrumb {
     float: left;
-    margin: 0;
+    margin: -1px 0;
     padding: 16px 15px 14px;
     background-color: transparent;
     border-radius: 0;
