@@ -594,7 +594,6 @@ i.fa {
     margin: 0 0 30px;
     padding: 0;
     background-color: #fff;
-    border-bottom: 1px solid #e9e9e9;
     text-align: right;
 }
 
@@ -1180,6 +1179,9 @@ i.fa {
 }
 
 .content-list-header {
+    border: 1px solid transparent;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
     background-color: rgba(35, 56, 66, 0.98);
     white-space: nowrap;
     position: relative;
@@ -1689,10 +1691,12 @@ a.content-list-header-title:focus {
 }
 
 .content-sidebar-widget-ad {
-    margin-top: 10px;
     padding: 15px;
     background-color: #fff;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-top: none;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
 }
 
 .content-sidebar-widget-ad .ad {
@@ -1726,10 +1730,12 @@ a.content-list-header-title:focus {
 }
 
 .content-sidebar-widget-statistics {
-    margin-top: 10px;
     padding: 15px;
     background-color: #fff;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-top: none;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
 }
 
 .content-sidebar-widget-statistics p {
